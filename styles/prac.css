@@ -8,7 +8,7 @@ font-family: 'Poppins', sans-serif;
     padding:0;
 }
 header{
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 50px auto;
     background: #FFF;
 }
@@ -40,12 +40,12 @@ font-weight: 700;
 .banner{
     margin: 42px auto 0 auto;
     display: flex;
-    gap:500px;
+    gap:300px;
 
 }
 .banner-images{
-    width: 440px;
-height: 414px;
+    width: 475px;
+height: 475px;
     background-image: url('../images/Circle\ design.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,6 +83,87 @@ font-weight: 700;
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
+}
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+    /* background-color: #E02C6D; */
+}
+.collection{
+    margin-top: 100px;
+    /* text-align: center; */
+    /* border:1px solid aqua; */
+}
+.section-title{
+    /* margin-left: 700px; */
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+.section-card{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap:50px;
+    margin-left: 100px;
+
+}
+.card{
+    width: 329px;
+height: 476px;
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+padding: 30px;
+
+}
+.card:hover{
+    border:2px solid #E02C6D;
+    cursor: pointer;
+}
+
+.card img{
+    width: 300px;
+    height: 256px;
+border-radius: 5px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+}
+.card-title{
+    color:  #18191F;
+font-size: 28px;
+font-weight: 500;
+margin-top: 16px;
+}
+.card-description{
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.card-last{
+    color:  #787885;
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.252px;
+margin-top: 8px;
+}
+.card-price{
+    color:gray-80, #5E6366;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.1px;
+/* margin-left: 5px; */
+display: flex;
+gap:10px;
+}
+.fa-star{
+    width: 11.068px;
+height: 10.316px;
+color:#FB8200;
 }
 
 @media screen and (max-width:576px){
@@ -128,5 +209,14 @@ font-weight: 700;
     .amazon img{
         width: 80px;
         height: 60px;
+    }
+    /* Collection */
+    .collection{
+        margin:0;
+    }
+    .section-card{
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 10px;
     }
 }
